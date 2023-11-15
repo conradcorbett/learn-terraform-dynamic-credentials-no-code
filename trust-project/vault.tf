@@ -6,7 +6,7 @@ provider "vault" {
 }
 
 resource "vault_aws_secret_backend" "aws_secret_backend" {
-  namespace = var.vault_namespace
+#  namespace = var.vault_namespace
   path      = var.aws_secrets_backend_path
 
   access_key = aws_iam_access_key.trust_relationships.id
