@@ -112,13 +112,13 @@ resource "tfe_variable" "tfc_aws_mount_path_tf" {
   variable_set_id = tfe_variable_set.trust_relationships.id
 }
 
-resource "tfe_variable" "tfc_vault_namespace" {
-  key             = "VAULT_NAMESPACE"
-  value           = "admin"
-  category        = "env"
-  description     = "Vault namespace."
-  variable_set_id = tfe_variable_set.trust_relationships.id
-}
+#resource "tfe_variable" "tfc_vault_namespace" {
+#  key             = "VAULT_NAMESPACE"
+#  value           = "admin"
+#  category        = "env"
+#  description     = "Vault namespace."
+#  variable_set_id = tfe_variable_set.trust_relationships.id
+#}
 
 resource "tfe_variable" "vault_aws_secrets_engine_user_name_env" {
   key             = "TERRAFORM_VAULT_USERNAME"
