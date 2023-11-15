@@ -52,15 +52,15 @@ resource "tfe_variable" "tfc_vault_role" {
   description = "The Vault role runs will use to authenticate."
 }
 
-resource "tfe_variable" "tfc_vault_namespace" {
-  variable_set_id = tfe_variable_set.s3_trust_relationship.id
-
-  key      = "TFC_VAULT_NAMESPACE"
-  value    = var.vault_namespace
-  category = "env"
-
-  description = "Namespace that contains the AWS Secrets Engine."
-}
+#resource "tfe_variable" "tfc_vault_namespace" {
+#  variable_set_id = tfe_variable_set.s3_trust_relationship.id
+#
+#  key      = "TFC_VAULT_NAMESPACE"
+#  value    = var.vault_namespace
+#  category = "env"
+#
+#  description = "Namespace that contains the AWS Secrets Engine."
+#}
 
 resource "tfe_variable" "enable_aws_provider_auth" {
   variable_set_id = tfe_variable_set.s3_trust_relationship.id
