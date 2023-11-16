@@ -11,10 +11,10 @@ output "tfc_org_name" {
   value       = var.tfc_organization_name
 }
 
-output "trust_relationships_arn" {
-  description = "ARN of trust relationships IAM role."
-  value       = aws_iam_role.trust_relationships.arn
-}
+#output "trust_relationships_arn" {
+#  description = "ARN of trust relationships IAM role."
+#  value       = aws_iam_role.trust_relationships.arn
+#}
 
 output "trust_project_url" {
   description = "URL of trust relationships project."
